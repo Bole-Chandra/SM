@@ -949,29 +949,40 @@ footer a{color:#90b8ff}
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════ -->
-<footer role="contentinfo">
-  <div class="foot-logo">
-    <svg width="34" height="34" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <rect width="38" height="38" rx="9" fill="#1A56DB"/>
-      <g transform="translate(19,19)"><path d="M6.5-8.5a6,6,0,0,0-6,6 4,4,0,0,0,1,2.6l-7.5,7.5a1.8,1.8,0,1,0,2.5,2.5l7.5-7.5A6,6,0,0,0,12.5-2.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" fill="none"/><circle cx="6" cy="-8" r="2" fill="#fff"/></g>
-      <text x="4" y="25" font-family="Inter,sans-serif" font-weight="900" font-size="11" fill="white" letter-spacing="-.3">SM</text>
+<!-- ═══ FOOTER COMPONENT ═══ -->
+<footer role="contentinfo" style="background: #F4F7FB; padding: 40px 5%; text-align: center; border-top: 1px solid #D8E2F0;">
+  <div class="foot-logo" style="display: inline-flex; align-items: center; gap: 10px; margin-bottom: 1.2rem; text-decoration: none;">
+    <!-- Matches Header Logo Coordinates Exactly -->
+    <svg width="34" height="34" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect width="32" height="32" rx="6" fill="#1A56DB"/>
+      <text x="50%" y="55%" font-family="sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">SM</text>
     </svg>
-    <div class="foot-logo-text">SM <span>Techno</span> Services</div>
+    <div class="foot-logo-text" style="font-size: 1.15rem; font-weight: 800; color: #0B1E3D; letter-spacing: -.3px; line-height: 1.1; text-align: left;">
+      SM <span style="color: #1A56DB;">Techno</span> Services
+    </div>
   </div>
-  <p>Washing Machine · Microwave Oven · Refrigerator Repair</p>
-  <p>📍 Secunderabad, Hyderabad, Telangana &nbsp;|&nbsp; ☎ <a href="tel:9908473572">9908473572</a></p>
-  <p style="margin-top:.6rem">© 2026 SM Techno Services. All rights reserved. Serving Secunderabad, Hyderabad &amp; all of Telangana.</p>
+  
+  <p style="color: #5A6A80; font-size: 0.9rem; margin-bottom: 0.6rem;">Washing Machine · Microwave Oven · Refrigerator Repair</p>
+  <p style="color: #5A6A80; font-size: 0.9rem; margin-bottom: 0.6rem;">📍 Secunderabad, Hyderabad, Telangana &nbsp;|&nbsp; ☎ <a href="tel:9908473572" style="color: #1A56DB; font-weight: 600; text-decoration: none;">9908473572</a></p>
+  <p style="margin-top: .6rem; color: #5A6A80; font-size: 0.9rem;">© 2026 SM Techno Services. All rights reserved. Serving Secunderabad, Hyderabad &amp; all of Telangana.</p>
 </footer>
 
-<!-- ═══ FLOATING BUTTONS ═══ -->
+<!-- ═══ SVGS FOR FLOATING BUTTON INTERACTION ═══ -->
+<svg style="display:none;">
+  <g id="ic-wa">
+    <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.333 4.993L2 22l5.135-1.345a9.943 9.943 0 004.877 1.28c5.505 0 9.988-4.478 9.99-9.985A9.997 9.997 0 0012.012 2zm5.82 14.156c-.242.678-1.416 1.309-1.95 1.359-.482.046-.967.247-3.1-1.124-2.73-1.751-4.482-4.52-4.618-4.704-.135-.183-1.102-1.464-1.102-2.793 0-1.329.696-1.984.945-2.247.248-.262.546-.328.728-.328.182 0 .364.001.52.009.164.007.385-.063.603.46.223.535.762 1.854.829 1.987.066.133.11.288.02.464-.088.177-.133.288-.265.442-.132.154-.277.344-.395.462-.133.133-.272.279-.117.545.155.266.69 1.13 1.482 1.836.985.88 1.812 1.152 2.071 1.285.26.133.41.11.56-.063.15-.173.643-.75.815-.996.17-.247.343-.207.579-.12.237.087 1.503.708 1.761.837.258.128.43.193.493.302.062.11.062.632-.18 1.31z"/>
+  </g>
+  <g id="ic-phone">
+    <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.5-6.6l2.2-2.2c.3-.3.4-.7.2-1-.4-1.2-.6-2.4-.6-3.6 0-.6-.5-1-1-1H4.5c-.6 0-1 .5-1 1C3.5 13.2 10.8 20.5 20 20.5c.5 0 1-.5 1-1v-3.5c0-.5-.5-1-1-1z"/>
+  </g>
+</svg>
+
+<!-- ═══ FLOATING INTERACTIVE BUTTONS ═══ -->
 <a href="https://wa.me/919908473572?text=Hello%20SM%20Techno%20Services%2C%20I%20need%20repair!" class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp SM Techno Services 9908473572">
   <svg><use href="#ic-wa"/></svg>
 </a>
 <a href="tel:9908473572" class="float-call" aria-label="Call SM Techno Services 9908473572">
-  <svg><use href="#ic-phone"/></svg> 9908473572
+  <svg><use href="#ic-phone"/></svg>&nbsp;9908473572
 </a>
 
 </body>
